@@ -1,13 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
---main-font:'Inter';
---accent-font:'PressStart2P';
---main-color:#000;
---bg-image:repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
-repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
-linear-gradient(to bottom,#e7e7e7 0.01%,#1a1a1a);
---block-width:clamp(320px,100%,700px);
---padding:clamp(122px,10vw,130px);
---title-size:clamp(49px, 6vw, 65px);
---font-size:clamp(14px, 1.5vw, 23px);
-}
+    --main-font: 'Inter';
+    --accent-font: 'PressStart2P';
+    --main-color: #000;
+    --bg-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --block-width: clamp(320px, 100%, 700px);
+    --padding: clamp(122px, 10vw, 130px);
+    --title-size: clamp(49px, 6vw, 65px);
+    --font-size: clamp(14px, 1.5vw, 23px);
+    --botton-color: transparent;
+    --label-border: #fff;
+    --dialog-size: clamp(341px, calc(336.77px + 1.127vw), 353px);
+    --cl-button-size: clamp(261px, calc(250px + 3vw), 293px);
+    --accent-color:#000;}
