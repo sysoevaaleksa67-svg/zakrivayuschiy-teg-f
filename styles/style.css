@@ -22,7 +22,7 @@
 .block {
   margin:auto;
   border: 2px solid var(--accent-color, #000);
-  background-color: #fff;
+  background-color: var(--main-color);
   max-inline-size: var(--block-width);
 }
 
@@ -56,6 +56,7 @@ text-wrap: nowrap;
 font-size: var(--text-size);
 background-color: #fff;
 }
+
 .main-card-list { 
   display: flex;
   flex-direction: column;
@@ -75,9 +76,11 @@ filter:brightness(120%);
 .first-sprint-image {
   filter: grayscale(0.7);
 }
+
 .little-joys-image {
   filter: blur(0.2rem);
 }
+
 .card-title {
 font-size: var(--card-title);
 font-variation-settings: 'wdth' 785;
@@ -98,6 +101,7 @@ filter: opacity(0.5) drop-shadow(25px 4px 7px rgba(0, 0, 0, 0.9));
 .feelings-image {
  filter: hue-rotate(10deg);
 }
+
 .card-decor {
 position: relative;
 }
@@ -245,7 +249,7 @@ position: relative;
   outline: none;
   }
 
-  .button__text{
+  .button__text {
   position: relative;
   z-index:2;
   color:var(--main-color);
@@ -299,6 +303,7 @@ font-family: var(--accent-font);
 text-transform: uppercase;
 max-inline-size: var(--dialog-size);
 }
+
 .main_dialog .save-icon {
   flex-shrink: 0;
   align-self: center;
@@ -306,9 +311,7 @@ max-inline-size: var(--dialog-size);
   height: 39px;/*запрещаем картинке сжиматься*/
 }   
 
- 
-
-.dialog-content{
+.dialog-content {
 display: flex;
 gap: 25px;
 }
@@ -332,9 +335,11 @@ outline: none;
   .card-image {
   height: 371px;
 }
+
   .save-button {
   min-block-size: 84px;
 }
+
   .save-icon {
 width: 28px;
 height:28px;
@@ -342,6 +347,7 @@ height:28px;
 }
 
 @supports (text-stroke:1px var(--label-border)) {
+
 .label-text {
     text-stroke: 1px var(--label-border);
   }
