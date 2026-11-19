@@ -36,7 +36,7 @@ margin-bottom: 100px;
 padding: var(--padding);
 font-family: var(--accent-font);
 text-transform: uppercase;
-background-color: #fff;
+background-color: var(--main-color);
 }
 
 .color-button {
@@ -54,7 +54,7 @@ text-wrap: nowrap;
 
 .main {
 font-size: var(--text-size);
-background-color: #fff;
+background-color: var(--main-color);
 }
 
 .main-card-list { 
@@ -119,11 +119,11 @@ position: relative;
 }
 
 .label-text {
-    color: #000;
-    font-family: var(--accent-font);
-    font-weight: 400;
--webkit-text-stroke: 1px var(--label-border);
-  }
+  color: #000;
+  font-family: var(--accent-font);
+  font-weight: 400;
+  -webkit-text-stroke: 1px var(--label-border);
+}
 
 .card-content {
   display: flex;
@@ -150,31 +150,28 @@ position: relative;
   outline: none;
 }
 
-
   .like-icon {
   width: 27px;
   height: 24px;
 }
 
-  
+.sparks {
+opacity: 0;
+}
 
-  .sparks {
-  opacity: 0;
-  }
-
-  .like-icon.is-liked .sparks {
-    opacity: 1;
-    animation: sparks-flash 0.3s ease-in 0.3s 1;
-  }
+.like-icon.is-liked .sparks {
+ opacity: 1;
+ animation: sparks-flash 0.3s ease-in 0.3s 1;
+}
 
   .contour {
   transition: fill 0.1s linear;
 }
 
-  .like-icon.is-liked .contour {
-    fill: var(--animation-fill-color);
-    transition: fill 0.3s linear 0.06s;
-  }
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
 
   .core {
   transition: fill 0.3s linear;
@@ -195,9 +192,9 @@ position: relative;
   transition-delay:0s;
 }
 
-  .main-body {
-    transition: fill 0.3s linear;
-  }
+.main-body {
+  transition: fill 0.3s linear;
+}
 
   .like-icon:hover .main-body {
   fill: var(--accent-color);
@@ -229,6 +226,7 @@ position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
+
   .button-animation::before {
   content: "";
   position: absolute;
@@ -256,8 +254,7 @@ position: relative;
   font-family: var(--accent-font);
   font-size: var(--text-size);
   mix-blend-mode: difference;
-}
-
+  }
 
   .save-action-sector {
   padding-bottom: 100px;
@@ -285,6 +282,7 @@ position: relative;
   box-shadow: 2px 2px 0 var(--accent-color);
   outline: none;
 }
+
 .save-icon {
 width: 21px;
 height:21px;
@@ -295,6 +293,7 @@ mix-blend-mode: difference;
 .main_dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 } 
+
 .main_dialog[open] {
 display: flex;
 flex-direction: column;
@@ -338,6 +337,7 @@ outline: none;
 
   .save-button {
   min-block-size: 84px;
+  flex-direction: column;
 }
 
   .save-icon {
