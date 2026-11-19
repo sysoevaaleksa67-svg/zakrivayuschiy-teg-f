@@ -336,7 +336,7 @@
 
   .save-button {
     flex-direction: column; /*для мобильной версии*/
-    min-block-size: 84px; 
+    min-block-size: 84px;
   }
 
   .save-icon {
