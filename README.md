@@ -1,1 +1,1 @@
-https://sysoevaaleksa67-svg.github.io/zakrivayuschiy-teg-f /
+https://github.com/sysoevaaleksa67-svg/zakrivayuschiy-teg-f
