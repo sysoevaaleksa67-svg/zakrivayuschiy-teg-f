@@ -328,7 +328,8 @@
 
 .close-button {
   height: 38px;
-  max-inline-size: var(--cl-button-size);
+  inline-size: var(--cl-button-size);
+  text-transform: uppercase;
 }
 
 .close-button:focus {
