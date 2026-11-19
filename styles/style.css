@@ -14,6 +14,8 @@
   font-family: var(--main-font), sans-serif;
   background-image: var(--bg-image);
   background-size: cover;
+  background-attachment: fixed;
+  background-color:var(--main-color);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" 400;
@@ -34,7 +36,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   padding: var(--padding);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), monospace;
   text-transform: uppercase;
   background-color: var(--main-color);
 }
@@ -54,7 +56,6 @@
 
 .main {
   font-size: var(--text-size);
-  background-color: var(--main-color);
 }
 
 .main-card-list {
@@ -83,7 +84,9 @@
 
 .card-title {
   font-size: var(--card-title);
-  font-variation-settings: "wdth" 785;
+  font-variation-settings: "wght" 785;
+  border-block-end: 2px solid var(--accent-color);
+  padding: 5px 10px;
 }
 
 .dobts-image {
@@ -112,15 +115,15 @@
   right: 25px;
   display: grid;
   justify-content: flex-end;
-  width: 98px;
-  height: 14px;
+  max-width: 98px;
   opacity: 50%;
   mix-blend-mode: hard-light;
+  z-index: 3;
 }
 
 .label-text {
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), monospace;
   font-weight: 400;
   -webkit-text-stroke: 1px var(--label-border);
 }
@@ -129,6 +132,8 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  font-size: 18px;
+  line-height: 21px;
   padding: 25px;
 }
 
@@ -219,6 +224,7 @@
 .card__like-button {
   width: 130px;
   height: 38px;
+  border:2px solid var(--accent-color);
 }
 
 .button-animation {
@@ -251,7 +257,7 @@
   position: relative;
   z-index: 2;
   color: var(--main-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), monospace;
   font-size: var(--text-size);
   mix-blend-mode: difference;
 }
@@ -270,9 +276,9 @@
   margin-bottom: 100px;
   border: 2px solid var(--accent-color);
   overflow: hidden;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), monospace;
   font-size: var(--text-size);
-  background: transparent;
+  background: var(--main-color);
   transition: box-shadow 0.3s ease;
   max-inline-size: clamp(306px, calc(286.8px + 6vw), 335px);
   min-block-size: 55px;
@@ -284,6 +290,7 @@
 }
 
 .save-icon {
+  position: relative;
   width: 21px;
   height: 21px;
   color: var(--main-color);
@@ -298,7 +305,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), monospace;
   text-transform: uppercase;
   max-inline-size: var(--dialog-size);
 }
